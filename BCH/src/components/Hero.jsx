@@ -4,7 +4,7 @@ import Img from "./images/Hero.webp"
 const Hero = () => {
   return (
     <div className='flex justify-center items-center w-full h-auto'>
-      <div className='flex md:flex-row-reverse flex-col justify-center items-center md:w-10/12 w-11/12 h-auto m-8'>
+      <div className='flex md:flex-row-reverse flex-col justify-center items-center lg:max-w-screen-lg md:w-10/12 w-11/12 h-auto m-8'>
 
         <img className='lg:max-w-sm md:w-6/12 w-full' src={Img} alt="Img" />
 
