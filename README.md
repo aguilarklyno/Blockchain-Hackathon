@@ -21,4 +21,4 @@ $ npm run dev
 
 ・ CSSには **TailwindCSS** を使用
 
-・ Iconには ** React-Icons** を使用
+・ Iconには **React-Icons** を使用
