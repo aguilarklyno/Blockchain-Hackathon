@@ -23,6 +23,8 @@ $ npm run dev
 
 ・ Iconには **React-Icons** を使用
 
+・ スクロールエフェクトには **Scroll Reveal** を使用
+
 ## srcファイル構成
 
 <pre>
