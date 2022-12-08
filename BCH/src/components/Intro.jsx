@@ -1,14 +1,19 @@
 import React from 'react'
+import { Scroll } from './global-components/ScrollReveal'
+import { Scroll02 } from './global-components/ScrollReveal02'
+import { Scroll03 } from './global-components/ScrollReveal03'
 import Browse from "./images/Browse.svg"
 import Explore from "./images/Explore.svg"
 import wallet from "./images/wallet.svg"
 
 const Intro = () => {
   return (
-      <div className='flex justify-center items-center w-full h-auto'>
-        <div className='flex md:flex-row flex-col flex-wrap justify-center items-center lg:max-w-screen-xl md:w-10/12 w-11/12 h-auto m-8'>
-  
-          <div className='flex flex-col justify-between items-center m-4 p-4 sm:w-64 w-3/4 sm:h-80 h-auto bg-white rounded-2xl'>
+      <div className='flex justify-center items-center w-full h-auto my-56'>
+
+        <div className='flex lg:flex-nowrap flex-wrap md:flex-row-reverse flex-col justify-center items-center lg:max-w-screen-lg w-10/12 h-auto md:ml-0 sm:ml-8 ml-0'>
+        <Scroll03>
+        <div className='flex flex-col justify-between items-center lg:mx-1 mx-4 my-12 p-4 lg:w-64 md:w-64 sm:w-56 w-44 lg:h-80 md:h-80 h-auto bg-white rounded-2xl'>
+     
             <img className='inline-block' src={Browse} alt="Browse"/>
             <p className='text-gray-700'>
               <span className='font-bold text-xl'>
@@ -18,9 +23,10 @@ const Intro = () => {
               </span>
               があれば、<br/>世界の人々と繋がれる
             </p>
-          </div>
-
-          <div className='flex flex-col justify-between items-center m-4 p-4 sm:w-64 w-3/4 sm:h-80 h-auto bg-white rounded-2xl'>
+        </div>
+        </Scroll03>
+        <Scroll02>
+        <div className='flex flex-col justify-between items-center lg:mx-1 mx-4 my-12 p-4 lg:w-64 md:w-64 sm:w-56 w-44 lg:h-80 md:h-80 h-auto bg-white rounded-2xl'>
             <img className='inline-block' src={Explore} alt="Explore"/>
             <p className='text-gray-700'>
               <span className='font-bold text-xl'>
@@ -30,9 +36,10 @@ const Intro = () => {
               </span>
               があれば、<br/>スムーズな取引ができる
             </p>
-          </div>
-
-          <div className='flex flex-col justify-between items-center m-4 p-4 sm:w-64 w-3/4 sm:h-80 h-auto bg-white rounded-2xl'>
+        </div>
+        </Scroll02>
+        <Scroll>
+        <div className='flex flex-col justify-between items-center lg:mx-1 mx-4 my-12 p-4 lg:w-64 md:w-64 sm:w-56 w-44 lg:h-80 md:h-80 h-auto bg-white rounded-2xl'>
             <img className='inline-block' src={wallet} alt="wallet"/>
             <p className='text-gray-700'>
               <span className='font-bold text-xl'>
@@ -42,8 +49,8 @@ const Intro = () => {
               </span>
               があれば、<br/>安全に個人情報を管理
             </p>
-          </div>
-
+        </div>
+        </Scroll>
         </div>
       </div>
   )

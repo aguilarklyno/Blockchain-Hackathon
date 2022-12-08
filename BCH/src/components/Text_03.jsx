@@ -1,10 +1,12 @@
 import React from 'react'
+import { Scroll } from './global-components/ScrollReveal'
 import Img from "./images/Hero.webp"
 
 const Text_03 = () => {
   return (
-    <div className='flex justify-center items-center w-full h-auto'>
-      <div className='flex md:flex-row-reverse flex-col justify-center items-center lg:max-w-screen-lg md:w-10/12 w-11/12 h-auto m-8'>
+    <div className='flex justify-center items-center w-full h-auto my-56'>
+      <Scroll>
+      <div className='flex md:flex-row-reverse flex-col justify-center items-center lg:max-w-screen-lg md:w-10/12 w-10/12 h-auto md:ml-16 sm:ml-12 ml-8'>
 
         <img className='lg:max-w-sm md:w-6/12 w-full' src={Img} alt="Img" />
 
@@ -23,6 +25,7 @@ const Text_03 = () => {
 
         </div>
       </div>
+      </Scroll>
     </div>
   )
 }
