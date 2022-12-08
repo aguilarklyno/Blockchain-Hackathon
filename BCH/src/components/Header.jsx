@@ -9,7 +9,9 @@ const Header = () => {
         <div className='flex justify-between items-center h-14 w-10/12'>
           
           <h1 className='text-4xl font-bold '>
-            EVE<span className='text-5xl text-blue-400 font-bold'>N</span>
+            <span className='text-5xl font-bold'>E</span>
+            VE
+            <span className='text-5xl text-blue-400 font-bold'>N</span>
           </h1>
 
 {/* --------------------------lg:ナビゲーションボタン----------------------------- */}
