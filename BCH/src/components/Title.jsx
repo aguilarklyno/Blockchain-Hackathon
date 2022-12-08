@@ -9,11 +9,13 @@ const Title = () => {
         <img className='lg:max-w-sm md:w-6/12 w-full' src={Img} alt="Img" />
 
         <div className='flex flex-col justify-center md:items-start items-center'>
-          <h1 className='lg:text-8xl md:text-left text-3xl text-center font-bold md:my-4 my-8  '>
-            EVE<span className='lg:text-9xl text-4xl text-blue-400'>N</span>.
+          <h1 className='lg:text-8xl md:text-left text-5xl text-center font-bold md:my-4 my-0  '>
+          <span className='lg:text-9xl text-6xl text-blue-400'>E</span>VE<span className='lg:text-9xl text-6xl text-blue-400'>N</span>.
           </h1>
           <h1 className='lg:text-5xl md:text-left text-3xl text-center font-bold md:my-4 my-8  '>
-            The thing, which will make a new world. 
+            The thing, which will take you to the 
+            <span className='font-bold'><span className='lg:text-6xl text-4xl'> E</span>VE<span className='lg:text-6xl text-4xl text-blue-400'>N </span></span>
+            world. 
             {/* EVE<span className='lg:text-6xl text-4xl text-blue-400'>N</span> */}
           </h1>
 
