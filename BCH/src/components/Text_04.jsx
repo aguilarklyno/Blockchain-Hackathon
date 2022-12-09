@@ -1,11 +1,11 @@
 import React from 'react'
-import { ScrollLeft } from './global-components/ScrollLeft'
+import { Scroll } from './global-components/ScrollReveal'
 import Img from "./images/Hero.webp"
 
 const Text_04 = () => {
   return (
     <div className='flex justify-center items-center w-full h-auto my-56 font-link'>
-      <ScrollLeft>
+      <Scroll >
       <div className='flex md:flex-row flex-col justify-center items-center lg:max-w-screen-lg md:w-10/12 w-10/12 h-auto md:ml-16 sm:ml-12 ml-8'>
 
         <img className='lg:max-w-sm md:w-6/12 w-full' src={Img} alt="Img" />
@@ -23,7 +23,7 @@ const Text_04 = () => {
 
         </div>
       </div>
-      </ScrollLeft>
+      </Scroll>
     </div>
   )
 }
