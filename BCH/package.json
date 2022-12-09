@@ -13,12 +13,19 @@
   },
   "dependencies": {
     "@mui/material": "^5.10.17",
+    "@web3uikit/icons": "^0.2.20",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.5",
+    "moralis": "^2.8.2",
+    "moralis-v1": "^1.12.0",
     "ethers": "^5.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.4.5",
-    "react-webcam": "^7.0.1",
+    "react-webcam": "^7.0.1",  
+    "react-moralis": "^1.4.2",
+    "web3uikit": "^1.0.4",
     "web3.storage": "^4.4.0"
   },
   "devDependencies": {

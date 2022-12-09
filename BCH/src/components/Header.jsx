@@ -1,6 +1,6 @@
 import React from 'react'
 import {AiOutlineMenu} from "react-icons/ai"
-
+import { ConnectButton } from 'web3uikit'
 
 const Header = () => {
   return (
@@ -19,7 +19,7 @@ const Header = () => {
             <AiOutlineMenu size={30}/>
           </div>
 
-
+          <ConnectButton moralisAuth={false}/>
 
 {/* --------------------------lg:ナビゲーションバー----------------------------- */}
           <nav className='lg:flex items-center hidden'>
