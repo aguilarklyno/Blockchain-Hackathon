@@ -19,9 +19,9 @@ const Intro = () => {
               <span className='font-bold text-xl'>
                 <span className='text-2xl'>E</span>
                 VE
-                <span className='text-2xl text-blue-400'>N</span>
+                <span className='text-2xl text-blue-400'>N </span>
               </span>
-              があれば、<br/>世界の人々と繋がれる
+              enable <br/>世界の人々との連携
             </p>
         </div>
         </Scroll03>
@@ -32,9 +32,9 @@ const Intro = () => {
               <span className='font-bold text-xl'>
                 <span className='text-2xl'>E</span>
                 VE
-                <span className='text-2xl text-blue-400'>N</span>
+                <span className='text-2xl text-blue-400'>N </span>
               </span>
-              があれば、<br/>スムーズな取引ができる
+              enable <br/>スムーズな取引
             </p>
         </div>
         </Scroll02>
@@ -45,9 +45,9 @@ const Intro = () => {
               <span className='font-bold text-xl'>
                 <span className='text-2xl'>E</span>
                 VE
-                <span className='text-2xl text-blue-400'>N</span>
+                <span className='text-2xl text-blue-400'>N </span>
               </span>
-              があれば、<br/>安全に個人情報を管理
+              enable <br/>安全な個人情報管理
             </p>
         </div>
         </Scroll>
