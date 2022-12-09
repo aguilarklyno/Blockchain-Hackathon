@@ -12,11 +12,11 @@ const Title = () => {
 
         <div className='flex flex-col justify-center md:items-start items-center'>
           <h1 className='lg:text-8xl md:text-left text-5xl text-center font-bold md:my-4 my-0  '>
-          <span className='lg:text-9xl text-6xl text-blue-400'>E</span>VE<span className='lg:text-9xl text-6xl text-blue-400'>N</span>.
+          <span className='lg:text-9xl text-6xl'>E</span>VE<span className='lg:text-9xl text-6xl text-blue-400'>N</span>.
           </h1>
           <h1 className='lg:text-4xl md:text-left text-2xl text-center font-bold md:my-4 my-8  '>
-            Be even with
-            <span className='font-bold'><span className='lg:text-5xl text-3xl'> E</span>VE<span className='lg:text-5xl text-3xl text-blue-400'>N. </span></span>
+            Make the world even with
+            <span className='font-bold'><span className='lg:text-5xl text-3xl'> E</span>VE<span className='lg:text-5xl text-3xl text-blue-400'>N</span></span>.
             
             {/* EVE<span className='lg:text-6xl text-4xl text-blue-400'>N</span> */}
           </h1>
