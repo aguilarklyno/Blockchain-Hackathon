@@ -4,7 +4,7 @@ import Img from "./images/Hero.webp"
 
 const Text_01 = () => {
   return (
-    <div className='flex justify-center items-center w-full h-auto my-56'>
+    <div className='flex justify-center items-center w-full h-auto my-56 font-link'>
       <Scroll>
         <div className='flex md:flex-row-reverse flex-col justify-center items-center lg:max-w-screen-lg md:w-10/12 w-10/12 h-auto md:ml-16 sm:ml-12 ml-8'>
 
@@ -18,7 +18,7 @@ const Text_01 = () => {
               <span className='lg:text-6xl text-4xl text-blue-400'>N</span>
             </h1>
 
-            <p className='md:my-0 my-4 text-xs md:text-left text-center w-9/12'>
+            <p className='md:my-0 my-4 text-xs md:text-left text-center w-9/12 font-link02'>
               誰もが平等に評価される世界を目指し、そして実現をするためにTeam GINTAMA は 
               <span className='font-bold'><span className='text-base'>E</span>VE<span className='text-base text-blue-400'>N</span></span>
               を作りました。<br className='md:inline hidden'/>

@@ -8,7 +8,7 @@ import wallet from "./images/wallet.svg"
 
 const Intro = () => {
   return (
-      <div className='flex justify-center items-center w-full h-auto my-56'>
+      <div className='flex justify-center items-center w-full h-auto my-56 font-link'>
 
         <div className='flex lg:flex-nowrap flex-wrap md:flex-row-reverse flex-col justify-center items-center lg:max-w-screen-lg w-10/12 h-auto md:ml-0 sm:ml-8 ml-0'>
         <Scroll03>
