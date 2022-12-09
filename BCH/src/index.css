@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-link {
+  font-family: 'Josefin Sans', cursive;
+}
+
+.font-link02 {
+  font-family: 'M PLUS 1p', cursive;
+}

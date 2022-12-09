@@ -5,7 +5,7 @@ import Img from "./images/Hero.webp"
 
 const Hero = () => {
   return (
-    <div className='flex justify-center items-center w-full h-auto my-56'>
+    <div className='flex justify-center items-center w-full h-auto mb-56 mt-20 font-link'>
       <Scroll>
         <div className='flex md:flex-row-reverse flex-col justify-center items-center lg:max-w-screen-lg md:w-10/12 w-10/12 h-auto md:ml-16 sm:ml-12 ml-8'>
         <img className='lg:max-w-sm md:w-6/12 w-10/12' src={Img} alt="Img" />
@@ -13,7 +13,7 @@ const Hero = () => {
           <h1 className='lg:text-5xl md:text-left text-3xl text-center font-bold md:my-4 my-8  '>
             Produced by
             Team<br/>
-            <span className='lg:text-7xl text-5xl text-gray-300'> GIN</span>
+            <span className='lg:text-7xl text-5xl text-gray-400'> GIN</span>
             <span className='lg:text-6xl text-4xl '>-TAMA</span>
           </h1>
           <p className='md:my-0 my-4 md:text-left text-center'>

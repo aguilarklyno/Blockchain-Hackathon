@@ -4,7 +4,7 @@ import Img from "./images/Hero.webp"
 
 const Title = () => {
   return (
-    <div className='flex justify-center items-center w-full h-auto my-56'>
+    <div className='flex justify-center items-center w-full h-auto my-56 font-link'>
       <Scroll>
       <div className='flex md:flex-row-reverse flex-col justify-center items-center lg:max-w-screen-lg md:w-10/12 w-10/12 h-auto md:ml-16 sm:ml-12 ml-8'>
 
