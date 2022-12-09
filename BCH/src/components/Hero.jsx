@@ -1,5 +1,6 @@
 import React from 'react'
 import Img from "./images/Hero.webp"
+import {Link} from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -19,10 +20,12 @@ const Hero = () => {
           <p className='md:my-0 my-4 md:text-left text-center'>
             Start exploring blockchain applications in seconds. Trusted by over 30 million users worldwide.
           </p>
-
+          <Link to='/use'>
           <button className='bg-blue-400 w-44 md:p-2 p-3 m-4 rounded-full' type='button'>
             Download for <span className='font-bold bg-white text-blue-400 p-1 rounded-3xl'>YOU</span>
           </button>
+          </Link>
+          
         </div>
 
       </div>
