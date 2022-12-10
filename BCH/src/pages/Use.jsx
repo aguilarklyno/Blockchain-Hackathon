@@ -3,11 +3,14 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import { useRef, useState, useCallback, useEffect } from "react";
 import Webcam from "react-webcam";
 import Header from "../components/Header";
-import NftUploader from "./web3";
 import { HiFingerPrint } from "react-icons/hi"
 import Metamask from '../components/images/metamask.png'
-
-import { ethers } from "ethers";
+import { useWeb3Contract } from "react-moralis"
+import { abi } from "../artifacts/Soulbound.json"
+import { useMoralis } from "react-moralis"
+import { ethers } from "ethers"
+import { useNotification } from "web3uikit"
+const contractAddresses = '0x03d19A9C3D3e9B9Cf82ADfF9Fe017062C9bC68df';
 import { Web3Storage } from 'web3.storage'
 import artifact from '../artifacts/Soulbound.json'
 
@@ -30,6 +33,54 @@ function Use() {
             setUrl(imageSrc);
         }
     }, [webcamRef]);
+
+    const { chainId: chainIdHex, isWeb3Enabled } = useMoralis()
+    console.log(isWeb3Enabled)
+    const chainId = parseInt(chainIdHex)
+    const SBTaddress = contractAddresses
+    const [entranceFee, setEntranceFee] = useState("0")
+    const [numPlayers, setNumplayers] = useState("0")
+    const [recentWinner, setRecentWinner] = useState("0")
+    const dispatch = useNotification()
+    const { runContractFunction:mintSBT } = useWeb3Contract({
+        abi,
+        contractAddress: SBTaddress, // we need to specify the network
+        functionName: "mintSBT",
+        params: {
+            _biometricInfo:10
+            //1,3,8
+        },
+    })
+    const { runContractFunction : compare ,contractResponse : res} = useWeb3Contract({
+        abi,
+        contractAddress: SBTaddress,
+        functionName: "compare",
+        params: {
+            _biometricInfo:2
+        },
+    })
+    useEffect(() => {
+        if (isWeb3Enabled) {
+            // try to read the raffle entrance fee
+        }
+    }, [isWeb3Enabled])
+    const handleSuccess = async (tx) => {
+        try {
+            //await tx.wait()
+            handleNewNotification(tx)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    const handleNewNotification = () => {
+        dispatch({
+            type: "info",
+            message: "Transaction Complete!",
+            title: "Transaction Notification",
+            position: "topR",
+            // icon: "bell",
+        })
+    }
 
     return (
         <>
@@ -61,7 +112,18 @@ function Use() {
                 </div>
                 <div className="flex justify-center mb-10 mr-12">
                     <button >
-                        <HiFingerPrint className='w-32 h-32 mt-10 transition ease-in-out delay-150 color-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-full'></HiFingerPrint>
+                        <HiFingerPrint
+                        onClick= {
+                            async () =>
+                           { 
+                            await mintSBT({
+                                onSuccess: handleSuccess,
+                                onError: (error) => console.log('ログインに失敗しました。'),
+                            })
+                        }
+                            
+                        }
+                        className='w-32 h-32 mt-10 transition ease-in-out delay-150 color-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-full'></HiFingerPrint>
                     </button>
                 </div>
                 <div className="w-16 h-96 mr-8">
