@@ -15,7 +15,7 @@ const Title = () => {
           <span className='lg:text-9xl text-6xl'>E</span>VE<span className='lg:text-9xl text-6xl text-blue-400'>N</span>.
           </h1>
           <h1 className='lg:text-4xl md:text-left text-2xl text-center font-bold md:my-4 my-8  '>
-            Make the world even with
+            We are
             <span className='font-bold'><span className='lg:text-5xl text-3xl'> E</span>VE<span className='lg:text-5xl text-3xl text-blue-400'>N</span></span>.
             
             {/* EVE<span className='lg:text-6xl text-4xl text-blue-400'>N</span> */}

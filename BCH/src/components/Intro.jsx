@@ -21,7 +21,7 @@ const Intro = () => {
                 VE
                 <span className='text-2xl text-blue-400'>N </span>
               </span>
-              enable <br/>世界の人々との連携
+              enable <br/>安全な個人情報管理
             </p>
         </div>
         </Scroll03>
@@ -47,7 +47,7 @@ const Intro = () => {
                 VE
                 <span className='text-2xl text-blue-400'>N </span>
               </span>
-              enable <br/>安全な個人情報管理
+              enable <br/>アドレスの非匿名化
             </p>
         </div>
         </Scroll>
